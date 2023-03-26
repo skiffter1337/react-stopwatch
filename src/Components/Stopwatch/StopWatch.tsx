@@ -78,7 +78,6 @@ export const StopWatch = () => {
     };
     const buttons = buttonsConfigs[status].map(({ text, callback }, index) => (<SuperButton callback={callback} key={index}>{text}</SuperButton>));
 
-    //  Доделать localstorage
 
     useEffect(() => {
         let valueAsString = localStorage.getItem('stopwatchValue')
