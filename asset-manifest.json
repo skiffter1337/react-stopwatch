@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/skiffter1337/react-stopwatch/static/css/main.1ba730f6.css",
+    "main.js": "/skiffter1337/react-stopwatch/static/js/main.6a5e771a.js",
+    "index.html": "/skiffter1337/react-stopwatch/index.html",
+    "main.1ba730f6.css.map": "/skiffter1337/react-stopwatch/static/css/main.1ba730f6.css.map",
+    "main.6a5e771a.js.map": "/skiffter1337/react-stopwatch/static/js/main.6a5e771a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1ba730f6.css",
+    "static/js/main.6a5e771a.js"
+  ]
+}
