@@ -79,15 +79,18 @@ export const StopWatch = () => {
     const buttons = buttonsConfigs[status].map(({ text, callback }, index) => (<SuperButton callback={callback} key={index}>{text}</SuperButton>));
 
     //  Доделать localstorage
-    // useEffect(() => {localStorage.setItem('stopwatchValue', JSON.stringify(time))}, [time])
-    //
-    // useEffect(() => {
-    //     let valueAsString = localStorage.getItem('stopwatchValue')
-    //     if(valueAsString) {
-    //         let valueAsObject = JSON.parse(valueAsString)
-    //         setTime(valueAsObject)
-    //     }
-    // }, [])
+
+    useEffect(() => {
+        let valueAsString = localStorage.getItem('stopwatchValue')
+        if(valueAsString) {
+            let valueAsObject = JSON.parse(valueAsString)
+            setTime(valueAsObject)
+        }
+    }, [])
+
+    useEffect(() => {
+        localStorage.setItem('stopwatchValue', JSON.stringify(time))}, [time]
+    )
 
     const onKeyDownHandler = (e: KeyboardEvent<HTMLDivElement>) => {
         if (e.key === "space") {
