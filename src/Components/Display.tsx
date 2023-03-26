@@ -1,6 +1,5 @@
 import React from 'react';
-import {TimeType} from "../App";
-
+import {TimeType} from "./StopWatch";
 
 type DisplayPropsType = {
     time: TimeType
