@@ -1,0 +1,21 @@
+.time {
+    padding: 15px;
+    display: inline-block;
+    width: 70px;
+    text-align: center;
+    font-size: 30px;
+
+    color: white;
+    background-color: #041e3a;
+    border-radius: 10%;
+
+}
+
+/*background:#00ABA9;*/
+/*color: #fff;*/
+/*display: inline-block;*/
+/*font-family: monospace;*/
+/*font-size: 22px;*/
+/*padding: 20px;*/
+/*border-radius: 5px;*/
+/*width: 70px;*/

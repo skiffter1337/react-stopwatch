@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
-import {Display} from "./Display";
-import {SuperButton} from "./SuperButton";
+import {Display} from "../Display/Display";
+import {SuperButton} from "../SuperButton";
+import s from "./Stopwatch.module.css"
 
 export type TimeType = {
     ms: number
@@ -69,7 +70,7 @@ export const StopWatch = () => {
             { text: "Reset", callback: restart }
         ],
         2: [
-            { text: "Resume", callback: stop },
+            { text: "Resume", callback: start},
             { text: "Reset", callback: restart }
         ]
     };
@@ -79,9 +80,11 @@ export const StopWatch = () => {
     ));
 
     return (
-        <div>
+        <div className={s.stopwatch}>
             <Display time={time}/>
+            <div className={s.buttons}>
             {buttons}
+            </div>
         </div>
     );
 };
