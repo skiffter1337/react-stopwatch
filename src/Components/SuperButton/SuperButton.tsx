@@ -1,4 +1,5 @@
 import React from 'react';
+import s from './SuperButton.module.css'
 
 type SuperButtonPropsType = {
     children: React.ReactNode
@@ -10,5 +11,5 @@ export const SuperButton: React.FC<SuperButtonPropsType> = (props) => {
 
     const onClickHandler = () => callback()
 
-    return <button onClick={onClickHandler}>{children}</button>
+    return <button onClick={onClickHandler} className={s.button}>{children}</button>
 };

@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import {Display} from "../Display/Display";
-import {SuperButton} from "../SuperButton";
+import {SuperButton} from "../SuperButton/SuperButton";
 import s from "./Stopwatch.module.css"
 
 export type TimeType = {
