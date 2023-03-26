@@ -16,3 +16,9 @@
     gap: 30px;
     align-items: flex-end;
 }
+.hotkeyInfo {
+    margin-top: 15px;
+    color: #041e3a;
+    background-color: white;
+    font-size: 15px;
+}
